@@ -53,8 +53,7 @@ public abstract class AbstractConnectionTest {
 		double avg = Arrays.stream(timeRecords).average().getAsDouble();
 		long sum = Arrays.stream(timeRecords).sum();
 
-		LOGGER.info("open/close connection {} times average: {} ms", MAX_ITERATIONS, avg);
-		LOGGER.info("open/close connection {} times total: {} ms", MAX_ITERATIONS, sum);
+		LOGGER.info("open/close connection {} times average: {} ms, total {} ms", MAX_ITERATIONS, avg, sum);
 
 		closeDataSource(ds);
 	}

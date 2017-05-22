@@ -1,7 +1,7 @@
 <configuration>
 	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
 		<encoder>
-			<Pattern>[%d{yyyy-MM-dd HH:mm:ss}][%-5p][%t][Line:%L][%c.%M] - %m%n
+			<Pattern>[%d{yyyy-MM-dd HH:mm:ss}][%-5p][%t][Line:%L][%c.%M] -\r\n%m%n
 			</Pattern>
 			<charset>UTF-8</charset>
 		</encoder>
